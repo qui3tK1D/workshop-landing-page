@@ -1,0 +1,133 @@
+$primary: #53c351;
+$mysecondary: #7a7e7b;
+$myaccent: #214e20;
+$accentlight: #327531;
+$bgprimary: #fdfefe;
+$headers: #363636;
+$light: #f4f9f8;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $headers;
+    line-height: 1.4;
+  }
+
+  p {
+    color: $mysecondary;
+  }
+}
+
+header {
+  background-image: linear-gradient(
+    to bottom,
+    #e3eeec,
+    #e6f2ed,
+    #ebf5ee,
+    #f0f8ee,
+    #fdfefe
+  );
+}
+
+main {
+  background: $bgprimary;
+}
+
+// buttons and links
+
+.mynav {
+  letter-spacing: -0.9px;
+}
+
+.footer {
+  letter-spacing: -0.5px;
+  font-size: 0.9rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  color: $headers !important;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: $accentlight !important;
+}
+
+.active.nav-link::after {
+  transform: scaleX(1);
+}
+
+.nav-link::after,
+.footer-link::after {
+  display: block;
+  position: absolute;
+  top: 95%;
+  left: 20%;
+  content: "";
+  width: 60%;
+
+  height: 2px;
+  background: $primary;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-light .navbar-toggler {
+  color: $primary !important;
+  border-color: $primary !important;
+}
+
+.footer-link,
+.myquote,
+.ctn-text {
+  color: $mysecondary;
+}
+
+.link-secondary,
+.link-secondary:link,
+.link-secondary:active {
+  color: $myaccent;
+  font-weight: 500;
+}
+
+.link-secondary:hover,
+.link-secondary:active,
+.footer-link:hover,
+.footer-link:active {
+  color: $accentlight;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-login {
+  padding: 0.8rem 2.8rem;
+}

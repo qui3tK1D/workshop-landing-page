@@ -1,0 +1,111 @@
+:root {
+  --m-carousel: #1c3a27;
+  --m-accent: #f4f9f8;
+}
+
+.main-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.pot-plants {
+  width: 8rem;
+  height: 8rem;
+}
+
+.outline-btn:hover,
+.outline-btn:focus {
+  color: var(--m-accent) !important;
+}
+
+/* utilities */
+
+.w-80 {
+  width: 90%;
+}
+
+.section-divide {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.my-padding-footer {
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+}
+
+.p-lh-base {
+  line-height: 1.7;
+}
+
+/* carousel */
+
+.carousel-card {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.my-carousel-container {
+  border-radius: 3.5rem;
+  background: var(--m-carousel);
+}
+
+.my-carousel-padding-control {
+  padding: 4rem 4rem 0 4rem;
+}
+
+.my-carousel-container p,
+.my-carousel-container h2 {
+  color: var(--m-accent) !important;
+  font-weight: 400;
+}
+.my-carousel-container p {
+  font-size: 1.1rem;
+}
+
+.old-man-container {
+  margin-top: -10rem;
+}
+
+.old-man {
+  width: 28rem;
+}
+
+/* overwrite carousel */
+
+.control-carousel.carousel-indicators {
+  bottom: -6rem;
+  left: 0;
+  margin: 0;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: var(--m-accent) !important;
+  border-radius: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.carousel-dark .carousel-control-next-icon {
+  -webkit-filter: invert(0) grayscale(0) !important;
+  filter: invert(0) grayscale(0) !important;
+}
+
+.carousel-inner {
+  width: 80% !important;
+}
+
+/* partnerlogo */
+.partner-logo {
+  height: 6rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* footer */
+.footer {
+  background: var(--m-accent);
+  padding: 2rem 5rem;
+}

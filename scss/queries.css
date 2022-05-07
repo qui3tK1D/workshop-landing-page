@@ -1,0 +1,123 @@
+/* under 990px */
+@media (max-width: 62em) {
+  /* html {
+    font-size: 85%;
+  } */
+
+  .section-divide {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.8rem;
+    border-radius: 1rem;
+  }
+
+  .btn-login {
+    padding: 0.6rem 2rem;
+  }
+
+  .pot-plants {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .control-img {
+    width: 50% !important;
+  }
+
+  .carousel-card {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .old-man-container {
+    margin: 0;
+  }
+  .old-man {
+    width: 20rem;
+  }
+
+  .my-padding-footer {
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+  }
+  .footer {
+    padding: 1rem 3rem;
+  }
+
+  .partner-logo {
+    height: 4.5rem;
+  }
+}
+
+/* under 768px*/
+
+@media (max-width: 48em) {
+  .my-carousel-padding-control {
+    padding: 2.6rem 2rem 0 2rem;
+  }
+
+  .carousel-inner {
+    width: 85% !important;
+  }
+
+  .carousel-card {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .my-padding-footer {
+    padding-top: 6rem;
+  }
+
+  .footer {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .partner-logo {
+    height: 4rem;
+  }
+}
+
+/* under 575px */
+@media (max-width: 36em) {
+  .btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .btn-login {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .my-carousel-padding-control {
+    padding: 1.6rem 1rem 0 1rem;
+  }
+
+  .my-carousel-container {
+    border-radius: 2rem;
+  }
+
+  .old-man {
+    width: 15rem;
+  }
+
+  .my-padding-footer {
+    padding-top: 3rem;
+  }
+
+  .footer {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  .footer:first-child {
+    margin: 0 !important;
+  }
+}
