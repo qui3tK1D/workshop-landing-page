@@ -55,10 +55,6 @@
 /* under 768px*/
 
 @media (max-width: 48em) {
-  html {
-    font-size: 90%;
-  }
-
   .my-carousel-padding-control {
     padding: 2.6rem 2rem 0 2rem;
   }
