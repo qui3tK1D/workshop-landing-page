@@ -131,3 +131,30 @@ main {
 .btn-login {
   padding: 0.8rem 2.8rem;
 }
+
+/* // animation */
+
+.navOnAnimate {
+  background-color: rgba(227, 238, 236, 0.9);
+  backdrop-filter: blur(10px) contrast(180%);
+  animation: fadeInDown 1s ease-in-out;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 3000;
+}
+
+.navOnAnimateUp {
+  animation: fadeOutUp 1s ease-in-out !important;
+  position: static !important;
+}
+
+.mynav {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.logoShake {
+  animation: headShake;
+  animation-duration: 1s;
+  animation-delay: 900ms;
+}
