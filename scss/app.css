@@ -12083,4 +12083,21 @@ main {
 .btn-login {
   padding: 0.8rem 2.8rem;
 }
+
+.navOnAnimate {
+  background-color: rgba(227, 238, 236, 0.9);
+  -webkit-backdrop-filter: blur(5px) contrast(180%);
+          backdrop-filter: blur(5px) contrast(180%);
+  -webkit-animation: fadeInDown 1s ease-in-out;
+          animation: fadeInDown 1s ease-in-out;
+}
+
+.logoShake {
+  -webkit-animation: headShake;
+          animation: headShake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
 /*# sourceMappingURL=app.css.map */
