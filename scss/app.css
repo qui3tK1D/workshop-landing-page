@@ -12024,8 +12024,7 @@ main {
           transform: scaleX(1);
 }
 
-.nav-link::after,
-.footer-link::after {
+.nav-link::after {
   display: block;
   position: absolute;
   top: 95%;
@@ -12069,7 +12068,7 @@ main {
 .link-secondary:active,
 .footer-link:hover,
 .footer-link:active {
-  color: #327531;
+  color: #327531 !important;
 }
 
 .btn {
@@ -12082,6 +12081,11 @@ main {
 
 .btn-login {
   padding: 0.8rem 2.8rem;
+}
+
+.outline-btn:hover,
+.outline-btn:focus {
+  color: #f4f9f8 !important;
 }
 
 /* // animation */
@@ -12097,13 +12101,7 @@ main {
   z-index: 3000;
 }
 
-.navOnAnimateUp {
-  -webkit-animation: fadeOutUp 1s ease-in-out !important;
-          animation: fadeOutUp 1s ease-in-out !important;
-  position: static !important;
-}
-
-.mynav {
+.mynavAni {
   -webkit-animation: fadeInDown 1s ease-in-out;
           animation: fadeInDown 1s ease-in-out;
 }

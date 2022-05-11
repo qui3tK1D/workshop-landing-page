@@ -77,15 +77,13 @@ main {
   transform: scaleX(1);
 }
 
-.nav-link::after,
-.footer-link::after {
+.nav-link::after {
   display: block;
   position: absolute;
   top: 95%;
   left: 20%;
   content: "";
   width: 60%;
-
   height: 2px;
   background: $primary;
   transform: scaleX(0);
@@ -118,7 +116,7 @@ main {
 .link-secondary:active,
 .footer-link:hover,
 .footer-link:active {
-  color: $accentlight;
+  color: $accentlight !important;
 }
 
 .btn {
@@ -130,6 +128,11 @@ main {
 
 .btn-login {
   padding: 0.8rem 2.8rem;
+}
+
+.outline-btn:hover,
+.outline-btn:focus {
+  color: $light !important;
 }
 
 /* // animation */
@@ -144,7 +147,7 @@ main {
   z-index: 3000;
 }
 
-.mynav {
+.mynavAni {
   animation: fadeInDown 1s ease-in-out;
 }
 

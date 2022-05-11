@@ -50,6 +50,12 @@
   .partner-logo {
     height: 4.5rem;
   }
+
+  /* about page */
+  .footer-img {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
 }
 
 /* under 768px*/
@@ -127,5 +133,11 @@
 
   .footer:first-child {
     margin: 0 !important;
+  }
+
+  /* about pages */
+  .footer-img {
+    width: 9rem !important;
+    height: 9rem !important;
   }
 }

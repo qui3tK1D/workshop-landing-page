@@ -1,3 +1,4 @@
+"use strict";
 const header = document.querySelector("header");
 const mainContent = document.querySelector("main");
 const navBar = document.querySelector(".mySticky");

@@ -14,11 +14,6 @@
   height: 8rem;
 }
 
-.outline-btn:hover,
-.outline-btn:focus {
-  color: var(--m-accent) !important;
-}
-
 /* utilities */
 
 .w-80 {
