@@ -110,6 +110,7 @@ main {
 .link-secondary:active {
   color: $myaccent;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 .link-secondary:hover,

@@ -1,3 +1,18 @@
+/* cloud control 1200px*/
+@media (max-width: 75.5em) {
+  svg {
+    height: 6rem;
+  }
+
+  .cloudOnePosition {
+    right: -2rem;
+  }
+
+  .cloudTwoPosition {
+    left: -2rem;
+  }
+}
+
 /* under 990px */
 @media (max-width: 62em) {
   .section-divide {
@@ -55,6 +70,16 @@
   .footer-img {
     width: 10rem !important;
     height: 10rem !important;
+  }
+
+  /* cloud control */
+}
+
+/* under 870 */
+@media (max-width: 49em) {
+  .cloudOnePosition,
+  .cloudTwoPosition {
+    display: none;
   }
 }
 

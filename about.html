@@ -49,10 +49,52 @@
     ></script>
 
     <!-- custom js -->
+    <script defer src="js/app.js"></script>
     <script defer src="timeline.js"></script>
+
+    <style>
+      /* .heading-bg {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-image: url("../images/cloud2.svg"),
+          url("../images/cloud2.svg");
+        background-position: 89px 60px, 933px 108px;
+      } */
+      .heading-green-bg {
+        background-color: #beeea9;
+      }
+
+      .card1 {
+        background: rgba(248, 249, 249, 0.1);
+        box-shadow: 0 8px 32px 0 #cacaca;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 10px;
+        z-index: 2;
+      }
+
+      .aboutImg {
+        height: 11rem;
+      }
+
+      .cloudOnePosition {
+        top: -5rem;
+        right: -1rem;
+        z-index: 0;
+        animation: fadeOutLeft 15s ease-in infinite alternate;
+      }
+
+      .cloudTwoPosition {
+        bottom: 0;
+        left: -1rem;
+        z-index: 0;
+        animation: fadeOutRight 15s ease-in infinite alternate;
+      }
+    </style>
   </head>
   <body>
-    <div class="main">
+    <header class="bg-success pb-3">
       <nav class="navbar navbar-expand-lg mynav navbar-light">
         <div class="container-fluid px-md-5 py-2 mySticky">
           <div class="d-flex align-items-center gap-2 logoShake2">
@@ -103,20 +145,264 @@
           </div>
         </div>
       </nav>
-
       <!-- nav end -->
 
-      <div class="container">
-        <div class="vh-100"></div>
+      <section class="container-fluid heading-bg py-5 mt-5">
+        <!-- card -->
+        <div class="container position-relative">
+          <div class="position-absolute cloudOnePosition">
+            <svg
+              class="cloud1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="300"
+              height="120"
+              viewBox="0 0 332 169"
+            >
+              <g id="g3877" transform="translate(-526 -347.09)">
+                <path
+                  id="path3824"
+                  d="M731.5,347.09c-40.1,0-73.29,29.18-78.72,67.07-.75-.04-1.52-.07-2.28-.07a51.612,51.612,0,0,0-35.44,14.03,37.182,37.182,0,0,0-25.56-10.03,36.771,36.771,0,0,0-32,18.16,17.622,17.622,0,0,0-13.25-6.16c-10.07,0-18.25,8.74-18.25,19.5s8.18,19.5,18.25,19.5a17.331,17.331,0,0,0,10.97-3.97c5.12,13.4,18.54,22.97,34.28,22.97a37.557,37.557,0,0,0,13.81-2.59,51.7,51.7,0,0,0,89.94,7.97,80.705,80.705,0,0,0,85.16-5.44,44.561,44.561,0,0,0,34.09,16.06c25.12,0,45.5-21.28,45.5-47.5s-20.38-47.5-45.5-47.5c-1.06,0-2.11.05-3.16.13-7.47-35.46-39.5-62.13-77.84-62.13Z"
+                  fill="#f8f9f9"
+                />
+                <path
+                  id="path3837"
+                  d="M731.5,359.81c-33.93,0-61.6,24.58-66.12,56.16a12.735,12.735,0,0,1-13.16,10.91c-.72-.04-1.29-.07-1.72-.07a38.722,38.722,0,0,0-26.72,10.6,12.735,12.735,0,0,1-17.44-.03,24.377,24.377,0,0,0-16.84-6.57,24.063,24.063,0,0,0-20.97,11.78,12.721,12.721,0,0,1-20.59,2.07,4.661,4.661,0,0,0-3.69-1.85c-2.71,0-5.53,2.47-5.53,6.78s2.82,6.79,5.53,6.79a4.5,4.5,0,0,0,2.97-1.16,12.714,12.714,0,0,1,19.87,5.37c3.2,8.36,11.83,14.79,22.41,14.79a24.883,24.883,0,0,0,9.16-1.72,12.727,12.727,0,0,1,16.28,6.68,38.953,38.953,0,0,0,67.78,5.97,12.725,12.725,0,0,1,16.59-4.03,67.853,67.853,0,0,0,71.66-4.59,12.718,12.718,0,0,1,17.15,2.12,31.686,31.686,0,0,0,24.38,11.57c17.93,0,32.78-15.16,32.78-34.79s-14.85-34.78-32.78-34.78c-.66,0-1.41.04-2.25.1a12.722,12.722,0,0,1-13.34-10.07c-6.23-29.53-32.97-52.03-65.41-52.03Z"
+                  transform="translate(-3.28 -8.16)"
+                  fill="#f8f9f9"
+                />
+                <path
+                  id="path3869"
+                  d="M603.75,484.34s-12-17-7.25-25.5c-6.75,8,3.63,29.54-2.5,28Z"
+                  fill="#f8f9f9"
+                />
+                <path
+                  id="path3871"
+                  d="M694,491.69s13.5-20.15,2.47-34.93c15.31,10.15,2.82,41.81,10.34,38.17Z"
+                  fill="#f8f9f9"
+                />
+                <path
+                  id="path3873"
+                  d="M777.75,487.34s-12-17-7.25-25.5c-6.75,8,3.63,29.54-2.5,28Z"
+                  fill="#f8f9f9"
+                />
+                <path
+                  id="path3875"
+                  d="M807.05,409.77s-20.81-.03-25.02,8.75c2.66-10.12,26.24-14.02,21.46-18.16Z"
+                  fill="#f8f9f9"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 card1 headerContent"
+            >
+              <div class="text-center p-5">
+                <div class="h4 mb-3 fw-bold">Benefits of Plants</div>
+                <p class="mb-4">
+                  the benefits of being outside in <br />
+                  nature –it's good for the<br />
+                  body andthe mind
+                </p>
+                <div
+                  class="d-flex gap-4 align-items-center justify-content-center"
+                >
+                  <button
+                    class="btn btn-outline-primary btn-sm outline-btn headerContent"
+                  >
+                    Watch Now
+                  </button>
+                  <a
+                    href="#"
+                    class="text-decoration-none link-secondary d-flex align-items-center gap-2 arrowMove headerContent"
+                    >See how it works <i class="fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="position-absolute cloudTwoPosition">
+            <svg
+              class="cloud2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="250"
+              height="150"
+              viewBox="0 0 290 189.362"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #f8f9f9;
+                  }
+                </style>
+              </defs>
+              <g id="layer1" transform="translate(-0.495 -954.374)">
+                <g id="g4449" transform="translate(0.495 954.374)">
+                  <path
+                    id="path2844"
+                    class="cls-1"
+                    d="M162.3,1001.731c0,26.155-26.668,47.357-59.564,47.357s-59.564-21.2-59.564-47.357,26.668-47.357,59.564-47.357S162.3,975.576,162.3,1001.731Z"
+                    transform="translate(39.332 -954.374)"
+                  />
+                  <path
+                    id="path2844-3"
+                    class="cls-1"
+                    d="M158.595,1002.405c0,25.964-25.585,47.013-57.147,47.013S44.3,1028.371,44.3,1002.405s25.585-47.013,57.147-47.013S158.595,976.44,158.595,1002.405Z"
+                    transform="translate(40.387 -953.424)"
+                  />
+                  <path
+                    id="path2844-9"
+                    class="cls-1"
+                    d="M152.725,1030.64c0,23.729-21.639,42.963-48.334,42.963s-48.334-19.235-48.334-42.963,21.639-42.963,48.334-42.963S152.725,1006.912,152.725,1030.64Z"
+                    transform="translate(51.36 -923.293)"
+                  />
+                  <path
+                    id="path2844-5"
+                    class="cls-1"
+                    d="M172.425,1013.5c0,23.729-21.639,42.963-48.334,42.963s-48.334-19.236-48.334-42.963,21.639-42.963,48.334-42.963S172.425,989.772,172.425,1013.5Z"
+                    transform="translate(69.746 -939.29)"
+                  />
+                  <path
+                    id="path2844-11"
+                    class="cls-1"
+                    d="M116.862,1020.57c0,23.729-21.639,42.963-48.334,42.963S20.2,1044.3,20.2,1020.57s21.639-42.963,48.334-42.963S116.862,996.842,116.862,1020.57Z"
+                    transform="translate(17.89 -932.691)"
+                  />
+                  <path
+                    id="path2844-11-1"
+                    class="cls-1"
+                    d="M120.448,1021.74c0,23.729-22.18,42.963-49.542,42.963s-49.542-19.235-49.542-42.963,22.18-42.963,49.542-42.963S120.448,998.012,120.448,1021.74Z"
+                    transform="translate(18.981 -931.599)"
+                  />
+                  <path
+                    id="path2844-1"
+                    class="cls-1"
+                    d="M77.636,1036.033c0,19.145-17.268,34.664-38.571,34.664S.495,1055.177.495,1036.033s17.268-34.663,38.571-34.663S77.636,1016.889,77.636,1036.033Z"
+                    transform="translate(-0.495 -910.514)"
+                  />
+                  <path
+                    id="path2844-1-76"
+                    class="cls-1"
+                    d="M77.529,1035.424c0,17.989-16.959,32.572-37.879,32.572s-37.879-14.583-37.879-32.572,16.959-32.572,37.879-32.572S77.529,1017.435,77.529,1035.424Z"
+                    transform="translate(0.697 -909.131)"
+                  />
+                  <path
+                    id="path2844-5-4"
+                    class="cls-1"
+                    d="M173.69,1016.63c0,24.871-22.026,45.036-49.2,45.036s-49.2-20.162-49.2-45.036,22.026-45.036,49.2-45.036S173.69,991.757,173.69,1016.63Z"
+                    transform="translate(69.313 -938.302)"
+                  />
+                  <path
+                    id="path2844-2"
+                    class="cls-1"
+                    d="M197.165,1021.04c0,23.729-21.639,42.963-48.334,42.963S100.5,1044.768,100.5,1021.04s21.639-42.963,48.334-42.963S197.165,997.312,197.165,1021.04Z"
+                    transform="translate(92.835 -932.253)"
+                  />
+                  <path
+                    id="path2844-2-2"
+                    class="cls-1"
+                    d="M196.759,1019.773c0,22.393-21.794,40.547-48.68,40.547s-48.68-18.153-48.68-40.547,21.794-40.547,48.68-40.547S196.759,997.38,196.759,1019.773Z"
+                    transform="translate(91.81 -931.179)"
+                  />
+                  <path
+                    id="path2844-1-7"
+                    class="cls-1"
+                    d="M63.6,1044.777a22.706,22.706,0,0,1-22.459,22.946,22.951,22.951,0,0,1,0-45.892A22.706,22.706,0,0,1,63.6,1044.777Z"
+                    transform="translate(16.475 -891.419)"
+                  />
+                  <path
+                    id="path2844-1-7-2"
+                    class="cls-1"
+                    d="M63.616,1043.811a22.362,22.362,0,0,1-22.113,22.6,22.607,22.607,0,0,1,0-45.2A22.361,22.361,0,0,1,63.616,1043.811Z"
+                    transform="translate(17.14 -891.999)"
+                  />
+                  <path
+                    id="path2844-4"
+                    class="cls-1"
+                    d="M131,1050.84c0,23.729-21.639,42.963-48.334,42.963s-48.334-19.236-48.334-42.963,21.639-42.963,48.334-42.963S131,1027.113,131,1050.84Z"
+                    transform="translate(31.089 -904.441)"
+                  />
+                  <path
+                    id="path2844-4-2"
+                    class="cls-1"
+                    d="M130.043,1049.9c0,23.226-21.131,42.056-47.2,42.056s-47.2-18.829-47.2-42.056,21.131-42.056,47.2-42.056S130.043,1026.675,130.043,1049.9Z"
+                    transform="translate(32.313 -904.47)"
+                  />
+                  <path
+                    id="path2844-8"
+                    class="cls-1"
+                    d="M186.055,1040.74c0,23.729-21.639,42.963-48.334,42.963s-48.334-19.236-48.334-42.963,21.639-42.963,48.334-42.963S186.055,1017.013,186.055,1040.74Z"
+                    transform="translate(82.466 -913.867)"
+                  />
+                  <path
+                    id="path2844-8-1"
+                    class="cls-1"
+                    d="M184.809,1039.749c0,22.822-21.678,41.324-48.421,41.324s-48.421-18.5-48.421-41.323,21.678-41.324,48.421-41.324,48.421,18.5,48.421,41.324Z"
+                    transform="translate(81.141 -913.263)"
+                  />
+                  <path
+                    id="path2844-1-7-6"
+                    class="cls-1"
+                    d="M106.841,1074.007c-15.411,2.549-29.97-7.356-32.518-22.122s7.88-28.8,23.292-31.352,29.97,7.356,32.518,22.122-7.88,28.8-23.292,31.35Z"
+                    transform="translate(68.049 -893.003)"
+                  />
+                  <path
+                    id="path2844-1-7-6-5"
+                    class="cls-1"
+                    d="M106.884,1072.607c-15.153,2.549-29.467-7.356-31.972-22.122s7.748-28.8,22.9-31.352,29.467,7.356,31.972,22.123-7.748,28.8-22.9,31.352Z"
+                    transform="translate(68.604 -894.31)"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- cloud section end -->
+    </header>
+    <main class="">
+      <div class="container-fluid">
+        <div class="row heading-green-bg justify-content-center bg-border py-5">
+          <div class="col-xl-6 col-lg-7 col-md-9 col-sm-11">
+            <div class="row headerContent">
+              <div class="col-auto headerContent">
+                <img
+                  src="images/about/plant-about.png"
+                  class="aboutImg"
+                  alt=""
+                />
+              </div>
+              <div class="col d-flex flex-column justify-content-around">
+                <p class="mb-0 mt-xl-3 mt-lg-0">
+                  Imagine streets lined with leafy green trees. Picture stunning
+                  forest views on a country property. Everyone will be relaxed
+                  just in the city.
+                </p>
+                <button
+                  class="btn btn-outline-primary align-self-start outline-btn headerContent"
+                >
+                  Watch Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container-fluid py-5 backgroundColor">
+
+      <!-- green-line section end -->
+
+      <div class="container-fluid py-5">
         <div class="row justify-content-center">
           <div class="col-12 text-center py-5">
             <div class="d-flex flex-column align-items-center gap-sm-3">
-              <h2 class="fw-bolder">Heading</h2>
-              <h5 class="ctn-text">We help realize your dreams in making.</h5>
-              <button class="btn btn-outline-primary outline-btn">
-                Watch Now
+              <h2 class="fw-bolder headerContent">We save the world</h2>
+              <h5 class="ctn-text headerContent">
+                We help realize your dreams in making.
+              </h5>
+              <button class="btn btn-outline-primary outline-btn headerContent">
+                Login
               </button>
             </div>
           </div>
@@ -125,10 +411,10 @@
               <div class="py-5">
                 <div class="containers right d-flex flex-column gap-4">
                   <div class="content align-self-start shadow-sm timelineSlide">
-                    <h4 class="mb-0">Heading</h4>
+                    <h4 class="mb-0">Step 1</h4>
                   </div>
                   <p class="timelineSlide">
-                    We help realize your dreams in making
+                    Please login your account for glow the point.
                   </p>
                 </div>
               </div>
@@ -137,20 +423,20 @@
                   class="containers left d-flex flex-column gap-4 align-items-end alignStart midCon"
                 >
                   <div class="content shadow-sm timelineSlide">
-                    <h4 class="mb-0">Heading</h4>
+                    <h4 class="mb-0">Step 2</h4>
                   </div>
                   <p class="timelineSlide">
-                    We help realize your dreams in making
+                    Buy the plans or watch ads for glowing plants.
                   </p>
                 </div>
               </div>
               <div class="py-5">
                 <div class="containers right d-flex flex-column gap-4">
                   <div class="content align-self-start shadow-sm timelineSlide">
-                    <h4 class="mb-0">Heading</h4>
+                    <h4 class="mb-0">Step 3</h4>
                   </div>
                   <p class="timelineSlide">
-                    We help realize your dreams in making
+                    We help our world beauty and get oxygen for human.
                   </p>
                 </div>
               </div>
@@ -159,6 +445,7 @@
         </div>
       </div>
       <!-- Timeline Sec End -->
+
       <div class="container-fluid py-5 home-bg">
         <div class="row">
           <div class="col-12">
@@ -166,13 +453,13 @@
               <div class="row py-3 justify-content-center">
                 <div class="col-12">
                   <div class="pb-2 mb-md-5 mb-4">
-                    <h2 class="fw-bolder">Negative Impact !</h2>
-                    <h5 class="ctn-text">
+                    <h2 class="fw-bolder mainContent">Negative Impact !</h2>
+                    <h5 class="ctn-text mainContent">
                       Top three negative impacts of lack of plants
                     </h5>
                   </div>
                   <div class="row g-md-5 g-4 gap-xl-5 justify-content-center">
-                    <div class="col-xl-3 col-lg-4">
+                    <div class="col-xl-3 col-lg-4 mainContent">
                       <div class="d-flex flex-column gap-1">
                         <div
                           class="d-flex flex-column align-items-center gap-md-3 gap-2"
@@ -190,7 +477,7 @@
                         <p>consequence of biodiversity loss.</p>
                       </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4">
+                    <div class="col-xl-3 col-lg-4 mainContent">
                       <div class="d-flex flex-column gap-1">
                         <div
                           class="d-flex flex-column align-items-center gap-md-3 gap-2"
@@ -208,7 +495,7 @@
                         <p>wildfires and loss of species.</p>
                       </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4">
+                    <div class="col-xl-3 col-lg-4 mainContent">
                       <div class="d-flex flex-column gap-1">
                         <div
                           class="d-flex flex-column align-items-center gap-md-3 gap-2"
@@ -254,6 +541,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>

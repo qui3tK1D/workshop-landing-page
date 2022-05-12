@@ -12062,6 +12062,8 @@ main {
 .link-secondary:active {
   color: #214e20;
   font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .link-secondary:hover,
