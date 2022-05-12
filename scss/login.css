@@ -1,0 +1,96 @@
+/*button outline disable*/
+
+input {
+  border: none !important;
+  border-bottom: 1px solid black !important;
+  outline: none !important;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.bg-login {
+  background-image: url(../images/login/login_bg_img_leaf.png);
+  background-repeat: no-repeat;
+  background-size: 35%;
+  height: 100vh;
+}
+
+.bg-sign-up-img {
+  background-image: url(../images/login/login-bg-svg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: revert;
+  height: 100vh;
+}
+.bg-md {
+  background-color: #aeea93 !important;
+}
+.text-color {
+  color: white !important;
+  /*border-color: white;*/
+}
+.border-md-bottom {
+  border-bottom: 1px solid white !important;
+}
+.width-md {
+  width: 75%;
+}
+/*button outline disable*/
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .text-color {
+    color: black !important;
+    /*border-color: black !important;*/
+  }
+  .border-md-bottom {
+    border-bottom: 1px solid black !important;
+  }
+
+  .bg-login {
+    background-image: url(../images/login/login_bg_img_leaf.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    height: 100vh;
+  }
+  .bg-sign-up-img {
+    background-image: url(../images/login/phone-rregular-signup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 10px;
+    height: 100vh;
+  }
+  .bg-md {
+    background-color: white !important;
+  }
+  .width-md {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bg-login {
+    background-image: url(../images/login/phone_rotate_img.png);
+    background-repeat: no-repeat;
+    background-size: 62%;
+    height: 100vh;
+    background-position: 173px 30px;
+  }
+  .form-mt {
+    margin-top: 35% !important;
+  }
+  .width-md {
+    width: 100%;
+  }
+}

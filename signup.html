@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="scss/login.css" />
+    <link rel="stylesheet" href="scss/app.css" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>Login</title>
+
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="js/login.js"></script>
+  </head>
+  <body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg mynav mynavAni navbar-light">
+      <div class="container-fluid px-md-5 py-2 mySticky">
+        <div class="d-flex align-items-center gap-2 logoShake">
+          <a class="" href="#">
+            <img
+              src="images/main-logo.png"
+              alt=""
+              class="d-inline-block align-text-top main-logo"
+            />
+          </a>
+          <div class="fs-3">
+            <span class="text-primary">plan</span><span>thie</span>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center justify-content-end"
+          id="navbarTogglerDemo01"
+        >
+          <ul
+            class="navbar-nav m-lg-auto align-items-center py-lg-0 py-sm-3 my-lg-0 my-3 gap-3"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <a
+            href="home.html"
+            class="btn btn-primary text-light btn-login shadow-sm"
+          >
+            Home
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--signup -->
+    <div class="container-fluid">
+      <div class="row bg-sign-up-img bg-md content">
+        <div class="col-lg-7 vh-100 d-lg-block d-md-none d-none"></div>
+        <div class="col-lg-5 vh-100 d-md-flex justify-content-md-center">
+          <div
+            class="d-flex flex-column justify-content-center vh-100 width-md"
+          >
+            <form action="">
+              <div class="text-center">
+                <p class="text-color mb-lg-0 mb-md-5 content">
+                  Already have an account? <br />
+                  <a
+                    href="login.html"
+                    class="text-decoration-none text-color content fw-bold"
+                    >Log In</a
+                  >
+                </p>
+              </div>
+              <div class="form-floating mb-3 content">
+                <input
+                  type="text"
+                  class="form-control bg-md text-color border-md-bottom"
+                  id="floatingInput"
+                  placeholder="Enter Ur Name"
+                />
+                <label for="floatingInput" class="text-color">Name</label>
+              </div>
+              <div class="form-floating mb-3 content">
+                <input
+                  type="email"
+                  class="form-control bg-md text-color border-md-bottom"
+                  id="floatingEmail"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingPassword" class="text-color">Email</label>
+              </div>
+
+              <div class="form-floating mb-3 content">
+                <input
+                  type="password"
+                  class="form-control bg-md text-color border-md-bottom"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword" class="text-color"
+                  >Password</label
+                >
+              </div>
+
+              <div class="mb-4 content">
+                <button class="btn text-light btn-primary w-100">
+                  SIGN UP
+                </button>
+              </div>
+            </form>
+
+            <p class="text-center mb-lg-2 text-white content">
+              By Continuing, you agree to accept our <br />Privacy Policy and
+              Term of Services.
+            </p>
+
+            <div class="d-flex content">
+              <hr class="text-white w-50" />
+              <p class="d-inline bg-white p-lg-2 mx-lg-2">OR</p>
+              <hr class="text-white w-50" />
+            </div>
+
+            <div class="">
+              <button
+                class="btn btn-warning mb-lg-3 mb-md-5 mb-4 w-100 d-flex bg-danger justify-content-center align-items-center mb-lg-2 content border-0"
+              >
+                <i class="fa-brands fa-facebook-square text-white"></i>
+                <p class="mb-0 ms-4 text-white fw-bold">
+                  SIGN UP WITH FACEBOOK
+                </p>
+              </button>
+
+              <button
+                class="btn w-100 d-flex bg-light btn-outline-dark justify-content-center align-items-center content border-0"
+              >
+                <img
+                  src="images/login/icons8-google.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <p class="mb-0 ms-4 text-black fw-bold">SIGN UP WITH GOOGLE</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
