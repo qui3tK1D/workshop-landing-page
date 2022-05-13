@@ -1,8 +1,9 @@
 $primary: #53c351;
+$danger: #4267b2;
 $mysecondary: #7a7e7b;
 $myaccent: #214e20;
 $accentlight: #327531;
-$bgprimary: #fdfefe;
+$bgprimary: #f7fbef;
 $headers: #363636;
 $light: #f4f9f8;
 
@@ -31,6 +32,8 @@ body {
   }
 }
 
+//  #fdfefe
+
 header {
   background-image: linear-gradient(
     to bottom,
@@ -38,7 +41,7 @@ header {
     #e6f2ed,
     #ebf5ee,
     #f0f8ee,
-    #fdfefe
+    #f7fbef
   );
 }
 

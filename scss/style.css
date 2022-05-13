@@ -105,3 +105,8 @@
   background: var(--m-accent);
   padding: 2rem 5rem;
 }
+
+/* about and contact us */
+.footer-about {
+  background-color: #beeea9;
+}

@@ -1,0 +1,27 @@
+body {
+  background-color: #f0f5f4;
+}
+
+.contactNav {
+  z-index: 1000;
+  background-color: #f0f5f4;
+}
+
+.GlassEffect {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.BgForContact {
+  top: 26%;
+  height: 300px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(to right, #78d44e, #a0eda9, #a6efc5);
+}
+
+.contactControl {
+  top: 30%;
+}
